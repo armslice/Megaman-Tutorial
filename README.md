@@ -1,7 +1,5 @@
 # Megaman-Tutorial
-
-### GitHub Repo:
-### https://github.com/Armslice/Megaman-Tutorial
+# https://github.com/Armslice/Megaman-Tutorial
 
 ## HTML5 Deploy:
 ### https://megaman-tutorial.netlify.com
