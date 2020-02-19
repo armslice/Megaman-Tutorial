@@ -11,11 +11,12 @@
 	Project Settings:
 	
 	General:
-		Display>Window
-		Size: 256x240, Test Width/Height: 768x720 
-		Stretch mode: 2d
-		Aspect: keep
-		Rendering>Quality>HDR: disable 
+		Display > Window
+          Size: 256x240, Test Width/Height: 768x720 
+          Stretch mode: 2d
+          Aspect: keep
+		Rendering > Quality>HDR: disable 
+        Rendering > Environment > Background color
 	Input map: movement, jump, shoot
 	Autoload: Tools.gd, ref.gd
 
@@ -40,7 +41,7 @@
 	- Create 
 	- Reimport : filter off
 
-### 4. TileMap Sprite Texture Region - Project settings Background color
+### 4. TileMap Sprite Texture Region
 
 ### 5. Player input/ velociy movement/friction Playing Animation
 	-Player script and inheritance
