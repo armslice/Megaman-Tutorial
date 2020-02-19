@@ -49,8 +49,8 @@
 
 ### 7. Bullets: 
 	Area2D, translate function, preload and instance, 
-	Signals: Area2D: body_entered / VisibilityNotifier2D: 	screen_exited, position2D, global_position, add_child, 
-	Timer, yield function, ternary operation for shootAnim
+	Signals: Area2D: body_entered / VisibilityNotifier2D: 	screen_exited, position2D, global_position, 
+	add_child, Timer, yield function, ternary operation for shootAnim
 
 ### 9. Enemies
 	AI, walking - holeCheck, blockCheck raycast
