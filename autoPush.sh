@@ -1,9 +1,9 @@
 #!/bin/bash
 #arg 1 is commit comment
 ARG=""
-if [ "$1" -eq  "" ]
+if [ "$@" -eq 0 ]
   then
-    $ARG="Committed"
+    $ARG="Committed "
   else
     $ARG=$1
 fi
