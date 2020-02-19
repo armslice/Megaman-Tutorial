@@ -8,5 +8,5 @@ if [ $@ -eq 0 ]
     $ARG=$1
 fi
 git add .
-git commit -m $ARG" - "$(date +"%D")"  "$(date +"%T")
+git commit -m "$ARG"" - "$(date +"%D")"  "$(date +"%T")
 git push -u origin master
