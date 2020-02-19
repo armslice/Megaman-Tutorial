@@ -54,18 +54,18 @@
 	Signals: Area2D: body_entered / VisibilityNotifier2D: 	screen_exited, position2D, global_position, 
 	add_child, Timer, yield function, ternary operation for shootAnim
 
-### 9. Enemies
+### 8. Enemies
 	AI, walking - holeCheck, blockCheck raycast
 	Death, fadeOut tools tween, yield
 	hit, AnimationPlayer : flash
 
-### 10. Player hit / lifebar
+### 9. Player hit / lifebar
 	AnimationPlayer with hit sprite animation 
 	(Animation player vs Sprite animations)
 	Player death.
 	Fall death.
 
-### 11. Extra Credit Homework!
+### 10. Extra Credit Homework!
 	
 	Enemy Defense
 	moving platforms
