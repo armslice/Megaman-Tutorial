@@ -1,4 +1,4 @@
-#Game.gd
+# Game.gd
 
 extends Node2D
 
@@ -59,7 +59,7 @@ func endSplash():
 		$Modal/splash.queue_free()
 
 
-#Character.gd
+# Character.gd
 
 extends KinematicBody2D
 
@@ -109,7 +109,7 @@ func die():
 	pass
 	
 
-#Player.gd
+# Player.gd
 
 extends "res://Character.gd" &#35inherits all variables and funtions of Character
 
@@ -240,7 +240,7 @@ func _to_string():
 		stunned
 	)
 
-#Hit.gd
+# Hit.gd
 
 extends Area2D
 
@@ -260,7 +260,7 @@ func _on_Area2D_body_entered(body):
 
 
 
-#shot.gd
+# shot.gd
 
 extends "res://Hit.gd"
 
@@ -281,7 +281,7 @@ func _process(delta):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-#enemy.gd
+# enemy.gd
 
 extends "res://Character.gd"
 
