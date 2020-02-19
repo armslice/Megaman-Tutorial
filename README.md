@@ -6,6 +6,9 @@
 ## HTML5 Deploy:
 ### https://megaman-tutorial.netlify.com
 
+## Download Godot:
+### https://godotengine.org/download
+
 ### 0. Setup:
 	Project Settings:
 	
