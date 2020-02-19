@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/Wily4Tile.png" type="Texture" id=1]
+
+[node name="Wily4TileSet" type="Node2D"]
+
+[node name="01" type="Sprite" parent="."]
+position = Vector2( -123.18, -37.0735 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="02" type="Sprite" parent="."]
+position = Vector2( -86.1062, -37.0735 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 35, 16, 16 )
+
+[node name="03" type="Sprite" parent="."]
+position = Vector2( -39.9746, -21.4679 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 52, 16, 16 )
+
+[node name="04" type="Sprite" parent="."]
+position = Vector2( -110.986, 0.454388 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 105, 105, 16, 16 )
+
+[node name="05" type="Sprite" parent="."]
+position = Vector2( -134.539, -0.0933571 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 70, 16, 16 )
+
+[node name="06" type="Sprite" parent="."]
+position = Vector2( -89.0759, 0.454388 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 52, 70, 16, 16 )
+
+[node name="07" type="Sprite" parent="."]
+position = Vector2( -68.5238, 12.7544 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 17, 35, 16, 16 )
+
+[node name="08" type="Sprite" parent="."]
+position = Vector2( -22.2266, 20.3855 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 17, 52, 16, 16 )
+
+[node name="09" type="Sprite" parent="."]
+position = Vector2( 29.3988, 21.8279 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 17, 70, 16, 16 )
+
+[node name="10" type="Sprite" parent="."]
+position = Vector2( 19.5394, -21.4439 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 52, 35, 16, 16 )
+
+[node name="11" type="Sprite" parent="."]
+position = Vector2( -13.873, -20.3484 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 87, 87, 16, 16 )

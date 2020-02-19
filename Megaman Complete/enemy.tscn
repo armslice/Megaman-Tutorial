@@ -1,0 +1,105 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sprites/Met/Met2.png" type="Texture" id=1]
+[ext_resource path="res://sprites/Met/Met3.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Met/Met1.png" type="Texture" id=3]
+[ext_resource path="res://enemy.gd" type="Script" id=4]
+[ext_resource path="res://Hit.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.87097, 6.15701 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "walk",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "stand",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "hit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.545098, 0.545098, 0.545098, 0.67451 ), Color( 1, 1, 1, 1 ), Color( 0.545098, 0.545098, 0.545098, 0.67451 ), Color( 1, 1, 1, 1 ), Color( 0.545098, 0.545098, 0.545098, 0.67451 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "reset"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Enemy" type="KinematicBody2D"]
+pause_mode = 1
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -6.24402 )
+shape = SubResource( 1 )
+
+[node name="frontFoot" type="RayCast2D" parent="."]
+position = Vector2( 5.95465, -1.53763 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="backFoot" type="RayCast2D" parent="."]
+position = Vector2( -5.86157, -1.67894 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="shootSpot" type="Position2D" parent="."]
+position = Vector2( 14, -22 )
+
+[node name="sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -12 )
+frames = SubResource( 2 )
+animation = "walk"
+frame = 1
+playing = true
+
+[node name="holeCheck" type="RayCast2D" parent="."]
+position = Vector2( 8.96576, -1.53763 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="blockCheck" type="RayCast2D" parent="."]
+position = Vector2( 8.96576, -6.24402 )
+enabled = true
+cast_to = Vector2( 2, 0 )
+
+[node name="anim" type="AnimationPlayer" parent="."]
+anims/hit = SubResource( 3 )
+anims/reset = SubResource( 4 )
+
+[node name="Hit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0, -9.86034 )
+
+[node name="CollisionShape2D" parent="Hit" index="0"]
+position = Vector2( 0.0440521, 3.7618 )
+
+[editable path="Hit"]

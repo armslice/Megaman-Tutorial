@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://Level.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fonts/Play-Bold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://LifeBar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/300px-GamebridgeSignPage.fw.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 5
+font_data = ExtResource( 4 )
+
+[node name="Game" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 225.129 ],
+"_edit_vertical_guides_": [ 128.328 ]
+}
+
+[node name="Modal" type="CanvasLayer" parent="."]
+
+[node name="DebugConsole" type="Panel" parent="Modal"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = 13.0
+margin_top = 67.0
+margin_right = 248.0
+margin_bottom = 221.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Modal/DebugConsole"]
+margin_left = 12.0
+margin_top = 11.0
+margin_right = 222.0
+margin_bottom = 133.0
+custom_fonts/font = SubResource( 1 )
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeBar" parent="Modal" instance=ExtResource( 5 )]
+margin_left = 16.0
+margin_top = 10.0
+margin_right = 153.0
+margin_bottom = 185.0
+
+[node name="instructions" type="Panel" parent="Modal"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 256.0
+margin_bottom = 240.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Modal/instructions"]
+margin_left = 3.0
+margin_top = 13.0
+margin_right = 257.0
+margin_bottom = 243.0
+text = "Keyboard Controls:
+
+Movement: 
+WASD 
+or Up,Left,Down,Right
+
+Shoot: 
+J or Space
+
+Jump: 
+K or CMD
+
+Press any key to start"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="splash" type="ColorRect" parent="Modal"]
+anchor_right = 0.25
+anchor_bottom = 0.22
+margin_left = -15.0
+margin_right = 199.0
+margin_bottom = 195.2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gamebridge" type="Sprite" parent="Modal/splash"]
+position = Vector2( 143.013, 121.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+pause_mode = 1
+position = Vector2( 181.641, -65.7399 )
+z_index = 1
+
+[node name="Level" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
+limit_bottom = 225
+limit_smoothed = true
