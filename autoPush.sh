@@ -1,5 +1,5 @@
 #!/bin/bash
-#arg 1 is commit comment
+#Argument 1 is commit comment
 #ARG=""
 #if [ "$@" -eq "" ]
 #  then
