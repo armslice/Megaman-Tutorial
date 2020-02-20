@@ -7,8 +7,8 @@
 ## Download Godot:
 ### https://godotengine.org/download
 
-## Number By Color All Code:
-### [Google Doc](Followthroughhttps://docs.google.com/document/d/17_708wYdpQQjCvqxompUCOMqtMxhsSnsNSRo1mf8v6c/edit?usp=sharing)
+## Number By Color All Code Followthrough:
+### [Google Doc](https://docs.google.com/document/d/17_708wYdpQQjCvqxompUCOMqtMxhsSnsNSRo1mf8v6c/edit?usp=sharing)
 
 ### 0. Setup:
 	Project Settings:
