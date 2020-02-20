@@ -122,7 +122,7 @@ func die():
 func _to_string():
 	return name+", onground: "+str(
 	onGround)+", jumpHold: "+str(
-	jumpHold)+", Vel: "+str(vel.floor())+"\nCanJump: "+str(
+	jumpHold)+"\nCanJump: "+str(
 	canJump)+", Shooting: "+str(shooting)+"\nStunned: "+str(
 		stunned
 	)

@@ -128,7 +128,6 @@ func _ready():
 	type = "player"
 	life = maxLife
 	set_process(true)
-	pass &#35 Replace with function body.
 
 func _process(delta):
 	ref.game.debug(self)

@@ -42,6 +42,8 @@
 ### 3. Animated Sprite
 	- Create 
 	- Reimport : filter off
+    Animations:
+        stand, walk, jump, fall, shoot_stand, shoot_walk, shoot_jump, shoot_fall
 
 ### 4. TileMap Sprite Texture Region
 
@@ -74,6 +76,7 @@
 	End Game
 	Powerup drops
 	Music/SFX
+    Bootsplash / Instruction screen
 
 
 ### Resources:
