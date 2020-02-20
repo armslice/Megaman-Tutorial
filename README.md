@@ -8,7 +8,7 @@
 ### https://godotengine.org/download
 
 ## Number By Color All Code:
-[Google Doc](Followthrough(https://docs.google.com/document/d/17_708wYdpQQjCvqxompUCOMqtMxhsSnsNSRo1mf8v6c/edit?usp=sharing)
+### [Google Doc](Followthroughhttps://docs.google.com/document/d/17_708wYdpQQjCvqxompUCOMqtMxhsSnsNSRo1mf8v6c/edit?usp=sharing)
 
 ### 0. Setup:
 	Project Settings:
