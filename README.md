@@ -43,7 +43,7 @@
 	- Create 
 	- Reimport : filter off
     Animations:
-        stand, walk, jump, fall, shoot_stand, shoot_walk, shoot_jump, shoot_fall
+        stand, walk, jump, fall, shoot_stand, shoot_walk, shoot_jump, shoot_fall, die, hit
 
 ### 4. TileMap Sprite Texture Region
 
