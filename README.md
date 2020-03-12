@@ -38,15 +38,15 @@ Inside of Modal, create a Panel, and inside the panel create a label. In code yo
 
 We can use this DebugConsole to see our game varibles in real time. You can do a print statement print(SomeVar), but that will only print the varible at that very moment. If you want a constant updated print out will do that with the Label by updating its "text" property. Start by calling "set_process(true)" in your ready function and create the "func _process(delta)" This is the function that runs each and every frame. Follow the Code By Color Follow in the google doc for this section (cyan)
 
--Scripting basics: what is GDscript? vars, program control, get_node(string) and $ sugar, built-in functions, "Search Help" is your friend!!
--Scene tree: Scenes, parent, child, Node2D, inheritance, Main Scene
--Editor tools: Select, Move, Rotate, locking children (label), 
--CanvasLayer
--Life cycle Ready/Process and onready vars, set_process(true)
--Functions: game.debug(text), typeof checking, variable basics
--Visibility - modulate vs self modulate
--input basics Input function vs Input in process, 		set_process_input(true)
--game.debug(“Hello Godot”)
+    -Scripting basics: what is GDscript? vars, program control, get_node(string) and $ sugar, built-in functions, "Search Help" is your friend!!
+    -Scene tree: Scenes, parent, child, Node2D, inheritance, Main Scene
+    -Editor tools: Select, Move, Rotate, locking children (label), 
+    -CanvasLayer
+    -Life cycle Ready/Process and onready vars, set_process(true)
+    -Functions: game.debug(text), typeof checking, variable basics
+    -Visibility - modulate vs self modulate
+    -input basics Input function vs Input in process, 		set_process_input(true)
+    -game.debug(“Hello Godot”)
 
 ### 2. Creating the Player<Character> 
     -Player/Character script and inheritance
