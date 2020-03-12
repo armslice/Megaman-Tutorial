@@ -11,9 +11,9 @@
 
 ### 0. Setup:
 
-    Start Godot and create a new project by creating and selecting an new empty project folder.
-    Copy and paste the contents of Start Resources folder into that folder.
-    
+Start Godot and create a new project by creating and selecting an new empty project folder.
+Copy and paste the contents of Start Resources folder into that folder.
+
 	Project>Project Settings:
 	
 	General:
