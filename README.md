@@ -36,7 +36,7 @@ For our very first child, Create a CanvasLayer for gui objects that are always o
 
 Inside of Modal, create a Panel, and inside the panel create a label. In code you can now access the label as $Modal/Panel/Label. Rename the panel to something distinct and now refer to them as that, lets use $Modal/DebugConsole/Label.
 
-We can use this DebugConsole to see our game varibles in real time. You can do a print statement print(SomeVar), but that will only print the varible at that very moment. If you want a constant updated print out will do that with the Label by updating its "text" property. Start by calling "set_process(true)" in your ready function and create the "func _process(delta)" This is the function that runs each and every frame. Follow the Code By Color Follow in the google doc for this section (cyan)
+We can use this DebugConsole to see our game varibles in real time. You can do a print statement print(SomeVar), but that will only print the varible at that very moment. If you want a constant updated print out will do that with the Label by updating its "text" property. Start by calling "set_process(true)" in your ready function and create the "func _process(delta)" This is the function that runs each and every frame. Follow the "Code By Color" in the google doc for this section (cyan)
 
     -Scripting basics: what is GDscript? vars, program control, get_node(string) and $ sugar, built-in functions, "Search Help" is your friend!!
     -Scene tree: Scenes, parent, child, Node2D, inheritance, Main Scene
