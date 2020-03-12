@@ -35,19 +35,14 @@ extents = Vector2( 7.18421, 10 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 25 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "die",
+"name": "stand",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "slide",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 17 ) ],
-"loop": true,
-"name": "shoot_climb_end",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 23 ) ],
@@ -80,24 +75,14 @@ animations = [ {
 "name": "climb",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ) ],
-"loop": true,
-"name": "climb_end",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 6 ) ],
-"loop": false,
-"name": "hit",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 10 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 24 ) ],
 "loop": true,
-"name": "stand",
+"name": "climb_end",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ), ExtResource( 28 ) ],
@@ -118,6 +103,21 @@ animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "blink",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "shoot_climb_end",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "hit",
 "speed": 5.0
 } ]
 

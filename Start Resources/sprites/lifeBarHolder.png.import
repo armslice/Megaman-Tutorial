@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lifeBarHolder.png-54190c591eb83d10d0afab6382650d7d.stex"
+path="res://.import/lifeBarHolder.png-a0e089b93209e3df77e9b824df331dda.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/lifeBarHolder.png"
-dest_files=[ "res://.import/lifeBarHolder.png-54190c591eb83d10d0afab6382650d7d.stex" ]
+source_file="res://Start Resources/sprites/lifeBarHolder.png"
+dest_files=[ "res://.import/lifeBarHolder.png-a0e089b93209e3df77e9b824df331dda.stex" ]
 
 [params]
 

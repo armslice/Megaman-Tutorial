@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lifeup.png-6f4c5cb46767fbdcbd07b56fcab2310e.stex"
+path="res://.import/lifeup.png-e8c7e7b7ddcb899951107bc67a24a367.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/lifeup.png"
-dest_files=[ "res://.import/lifeup.png-6f4c5cb46767fbdcbd07b56fcab2310e.stex" ]
+source_file="res://Start Resources/sprites/lifeup.png"
+dest_files=[ "res://.import/lifeup.png-e8c7e7b7ddcb899951107bc67a24a367.stex" ]
 
 [params]
 

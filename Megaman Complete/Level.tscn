@@ -39,6 +39,7 @@ tracks/1/keys = {
 }
 
 [node name="Level" type="Node2D"]
+position = Vector2( -142.245, 74.3554 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 226.219 ]
 }
@@ -63,7 +64,7 @@ position = Vector2( 638.504, -26.6558 )
 speed = 4
 
 [node name="Enemy4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 737.244, -76.0261 )
+position = Vector2( 2308.41, -661.171 )
 
 [node name="Enemy5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 905.446, -139.852 )
@@ -128,5 +129,5 @@ shape = SubResource( 1 )
 anims/get = SubResource( 2 )
 
 [node name="spawnPoint" type="Position2D" parent="."]
-position = Vector2( 14.759, -100.033 )
+position = Vector2( 2536.57, -596.338 )
 [connection signal="body_entered" from="NBToken/Area2D" to="NBToken" method="_on_Area2D_body_entered"]

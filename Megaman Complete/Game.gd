@@ -5,7 +5,7 @@ onready var console = $Modal/DebugConsole/Label
 onready var player = $Player
 onready var camera = $Camera
 onready var lifebar = $Modal/LifeBar
-onready var spawnPoint = $Level/spawnPoint.position
+onready var spawnPoint = $Level/spawnPoint.global_position
 
 var pitYLevel = 225
 var debugText = ""

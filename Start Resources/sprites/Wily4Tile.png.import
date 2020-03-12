@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wily4Tile.png-7db27a542aee4c9dee40768255228869.stex"
+path="res://.import/Wily4Tile.png-8b5999a9d59d7b02c8d63fb8f0693a52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Wily4Tile.png"
-dest_files=[ "res://.import/Wily4Tile.png-7db27a542aee4c9dee40768255228869.stex" ]
+source_file="res://Start Resources/sprites/Wily4Tile.png"
+dest_files=[ "res://.import/Wily4Tile.png-8b5999a9d59d7b02c8d63fb8f0693a52.stex" ]
 
 [params]
 

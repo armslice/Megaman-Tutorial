@@ -11,15 +11,15 @@ extents = Vector2( 6.87097, 6.15701 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "walk",
-"speed": 4.0
-}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "stand",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "walk",
+"speed": 4.0
 } ]
 
 [sub_resource type="Animation" id=3]
@@ -79,7 +79,6 @@ position = Vector2( 14, -22 )
 position = Vector2( 0, -12 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 1
 playing = true
 
 [node name="holeCheck" type="RayCast2D" parent="."]

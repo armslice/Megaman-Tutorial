@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Met1.png-d5625e55615fcddcbb0ec7e5ded70d48.stex"
+path="res://.import/Met1.png-36055eef17112014cbbd130c925cc93d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Met/Met1.png"
-dest_files=[ "res://.import/Met1.png-d5625e55615fcddcbb0ec7e5ded70d48.stex" ]
+source_file="res://Start Resources/sprites/Met/Met1.png"
+dest_files=[ "res://.import/Met1.png-36055eef17112014cbbd130c925cc93d.stex" ]
 
 [params]
 

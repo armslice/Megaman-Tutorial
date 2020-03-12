@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/300px-NB_Logo-Black_on_Red_Official.png-71f6d919974770b6dc79fdab0041d2f8.stex"
+path="res://.import/300px-NB_Logo-Black_on_Red_Official.png-016652cd53a69a5580e45302742a47a7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/300px-NB_Logo-Black_on_Red_Official.png"
-dest_files=[ "res://.import/300px-NB_Logo-Black_on_Red_Official.png-71f6d919974770b6dc79fdab0041d2f8.stex" ]
+source_file="res://Start Resources/sprites/300px-NB_Logo-Black_on_Red_Official.png"
+dest_files=[ "res://.import/300px-NB_Logo-Black_on_Red_Official.png-016652cd53a69a5580e45302742a47a7.stex" ]
 
 [params]
 

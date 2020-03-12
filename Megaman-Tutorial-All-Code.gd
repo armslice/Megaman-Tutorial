@@ -10,7 +10,6 @@ onready var spawnPoint = $Level/spawnPoint.position
 
 var pitYLevel = 225
 var debugText = ""
-var cameraFollowPlayer = true
 var opening = true
 
 func _ready():
@@ -23,8 +22,6 @@ func _ready():
 	
 	
 func _process(delta):
-	if cameraFollowPlayer:
-		camera.position = player.position
 	debugConsole()
 	
 	if opening:
@@ -84,7 +81,6 @@ var stunned = false
 &#35 Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process(true)
-	pass &#35 Replace with function body.
 
 func _process(delta):
 	onGround = frontFoot.is_colliding() or backFoot.is_colliding()
@@ -111,7 +107,7 @@ func die():
 
 # Player.gd
 
-extends "res://Character.gd" &#35inherits all variables and funtions of Character
+extends "res://Character.gd" &#35inherits all variables and functions of Character
 
 var maxJumpHold = .5
 var jumpHold = maxJumpHold
@@ -234,7 +230,7 @@ func die():
 func _to_string():
 	return name+", onground: "+str(
 	onGround)+", jumpHold: "+str(
-	jumpHold)+", Vel: "+str(vel.floor())+"\nCanJump: "+str(
+	jumpHold)+"\nCanJump: "+str(
 	canJump)+", Shooting: "+str(shooting)+"\nStunned: "+str(
 		stunned
 	)
@@ -280,7 +276,7 @@ func _process(delta):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-# enemy.gd
+# enemy.gd`
 
 extends "res://Character.gd"
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/300px-GamebridgeSignPage.fw.png-3c535a5b6133049674555cc9ac72181e.stex"
+path="res://.import/300px-GamebridgeSignPage.fw.png-cfb71e8350357bddc0772afd61ec5605.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/300px-GamebridgeSignPage.fw.png"
-dest_files=[ "res://.import/300px-GamebridgeSignPage.fw.png-3c535a5b6133049674555cc9ac72181e.stex" ]
+source_file="res://Start Resources/sprites/300px-GamebridgeSignPage.fw.png"
+dest_files=[ "res://.import/300px-GamebridgeSignPage.fw.png-cfb71e8350357bddc0772afd61ec5605.stex" ]
 
 [params]
 

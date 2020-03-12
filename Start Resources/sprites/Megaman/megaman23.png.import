@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/megaman23.png-4462e390d6d6ff9047e7d4d275219c4d.stex"
+path="res://.import/megaman23.png-c276275381821460be01a63564b4919c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Megaman/megaman23.png"
-dest_files=[ "res://.import/megaman23.png-4462e390d6d6ff9047e7d4d275219c4d.stex" ]
+source_file="res://Start Resources/sprites/Megaman/megaman23.png"
+dest_files=[ "res://.import/megaman23.png-c276275381821460be01a63564b4919c.stex" ]
 
 [params]
 

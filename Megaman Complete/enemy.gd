@@ -40,7 +40,7 @@ func tick():
 
 func walk():
 	vel.x += speed*dir
-	if !$holeCheck.get_collider() or $blockCheck.get_collider():
+	if !$holeCheck.get_collider() or $blockCheck.get_collider() and !$blockCheck.get_collider() == ref.player:
 		changeDir()
 
 func changeDir():
@@ -53,6 +53,7 @@ func changeDir():
 func defend():
 	invincible = true
 	defending = true
+	$Hit/CollisionShape2D.disabled = true
 	$sprite.animation = "stand"
 	if defenseTimer:
 		defenseTimer.stop()
@@ -60,6 +61,7 @@ func defend():
 	defenseTimer = tools.counter(4)
 	add_child(defenseTimer)
 	yield(defenseTimer,"timeout")
+	$Hit/CollisionShape2D.disabled = false
 	defenseTimer = null
 	invincible = false
 	defending = false

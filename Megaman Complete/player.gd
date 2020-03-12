@@ -2,7 +2,7 @@ extends "res://Character.gd" #inherits all variables and funtions of Character
 
 var maxJumpHold = .5
 var jumpHold = maxJumpHold
-var jumpPow = 75
+var jumpPow = 100
 var canJump = true
 var shot = preload("res://Shot.tscn")
 var shooting = false
