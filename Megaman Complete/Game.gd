@@ -9,21 +9,17 @@ onready var spawnPoint = $Level/spawnPoint.global_position
 
 var pitYLevel = 225
 var debugText = ""
-var cameraFollowPlayer = true
 var opening = true
 
 func _ready():
 	set_process(true)
 	set_process_input(true)
-	camera.limit_bottom = pitYLevel
 	add_child(tools.timer(self,4,"endSplash",[]))
 	get_tree().paused = true
-	player.position = $Level/spawnPoint.position
+	player.position = $Level/spawnPoint.global_position
 	
 	
 func _process(delta):
-	if cameraFollowPlayer:
-		camera.position = player.position
 	debugConsole()
 	
 	if opening:

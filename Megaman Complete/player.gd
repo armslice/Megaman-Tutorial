@@ -11,6 +11,7 @@ var maxLife = 10.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Camera.limit_bottom = ref.game.pitYLevel
 	$anim.play("reset")
 	type = "player"
 	life = maxLife

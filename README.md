@@ -12,7 +12,7 @@
 ### 0. Setup:
 
 Start Godot and create a new project by creating and selecting an new empty project folder.
-Copy and paste the contents of Start Resources folder into that folder.
+Copy and paste the contents of Start Resources folder into that new project folder.
 
 	Project>Project Settings:
 	
@@ -28,7 +28,9 @@ Copy and paste the contents of Start Resources folder into that folder.
 
 ### 1. Creating the Debug console
 
-Create a Node2D as your main scene, name it Game and save it, it will save as Game.tscn. This is the parent of all other objects in the game. You can try to run your scene now by clicking the play icon in the top right. You will be asked to select the main scene, select Game.tscn and an empty window of you game should now run. At this point you should see, the generic Godot splash screen and what ever the background color is set to in the Project Settings.
+In the top left you will find the scene tab. Here you can create all sorts of Nodes, the building block for the game objects in godot. In an empty scene you will get a list of suggestions. You can also press the [+] icon to create any type of the different nodes in Godot. Create a Node2D as the root of your first scene, name it Game and save it, it will save as Game.tscn. This is the parent of all other objects in the game. You can try to run your scene now by clicking the play icon in the top right. You will be asked to select the main scene, select Game.tscn and an empty window of you game should now run. At this point you should see, the generic Godot splash screen and what ever the background color is set to in the Project Settings.
+
+    This tutorial will reference the default layout of Godot which can be modified. If you can't find something according to these directions than you may have inadvertently changed the layout. You can reset the layout in the Editor menu >Editor Layout>Default
 
 We attach scripts to game objects. There is add/delete script button next to search bar in the "Scene" tab (The Scene Tree) If its green it means the current selected object has no script and you can create a new script and start coding. Give Game a script. If you named your object properly the script will automatically have the same name as the object, in this case Game.gd.
 
@@ -81,10 +83,25 @@ So later when the player falls down a hole the camera will stop at this limit as
 	-pitYLevel / Camera.limit_bottom
 
 ### 3. Animated Sprite
-	- Create 
-	- Reimport : filter off
-    Animations:
-        stand, walk, jump, fall, shoot_stand, shoot_walk, shoot_jump, shoot_fall, die, hit
+
+In the Player scene create an "AnimatedSprite" node. Let's name it sprite to make it easy to access in code. In the Inspector select the Frames property dropdown and choose New SpriteFrames. Now click on the SpriteFrames object that appears. This opens the SpriteFrame tools in the bottom of the screen. On the left of this tools is the Animations list. A default annimation is created for you. You can rename this animation to make your first animation: stand. Drag the stand animations frames from sprites/Megaman (which you should have copied from Start Resources) 
+
+By default the images will be filter upon import. To turn this off, select all the images you wish to fix, then click on the Import tab, located top left along with the scene tab. Scroll down to the Flags section and unclick Filter. Now press the Reimport button. The images will now apear with no filter in all their low bit glory.
+
+create more animations by clicking the icon of the sheet with a plus sign. Name each one and drag in the appropriate images. 
+
+    stand, walk, jump, fall, 
+    shoot_stand, shoot_walk, 
+    shoot_jump, shoot_fall, 
+    die, hit
+
+Note that for each animation we can set the Speed(FPS) and the Loop. For jump hit and fall we will turn the loop off so the animation sits on the last frame.
+
+	- Create AnimatedSprite
+    - Create new SpriteFrame in the Inspector
+	- Reimport : filter off in the Import Tab
+    - Create animations and drag frame in
+  
 
 ### 4. TileMap / Tileset
     Exporting a tileset .tres file 

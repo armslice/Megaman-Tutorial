@@ -105,12 +105,7 @@ texture = ExtResource( 4 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 pause_mode = 1
-position = Vector2( 2300.79, -672.496 )
+position = Vector2( 2097.15, -674.132 )
 z_index = 1
 
 [node name="Level" parent="." instance=ExtResource( 6 )]
-
-[node name="Camera" type="Camera2D" parent="."]
-current = true
-limit_bottom = 225
-limit_smoothed = true

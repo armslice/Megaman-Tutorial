@@ -35,39 +35,9 @@ extents = Vector2( 7.18421, 10 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "stand",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "slide",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 23 ) ],
-"loop": true,
-"name": "start_walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "shoot_walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "shoot_stand",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 29 ) ],
-"loop": true,
-"name": "shoot_fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 29 ) ],
-"loop": true,
-"name": "shoot_jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 19 ), ExtResource( 11 ), ExtResource( 18 ) ],
@@ -75,24 +45,29 @@ animations = [ {
 "name": "climb",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 10 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ) ],
-"loop": true,
-"name": "climb_end",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 28 ) ],
-"loop": false,
-"name": "fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 17 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "shoot_climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ) ],
+"loop": true,
+"name": "shoot_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ) ],
+"loop": true,
+"name": "shoot_fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "stand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "start_walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 13 ), ExtResource( 27 ), ExtResource( 22 ) ],
@@ -108,6 +83,31 @@ animations = [ {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
 "name": "shoot_climb_end",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "climb_end",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "shoot_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "shoot_stand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 10 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ) ],
@@ -321,3 +321,6 @@ position = Vector2( 14, -22 )
 anims/hit = SubResource( 3 )
 anims/reset = SubResource( 4 )
 anims/vanish = SubResource( 5 )
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
