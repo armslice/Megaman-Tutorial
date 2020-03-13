@@ -49,13 +49,32 @@ We can use this DebugConsole to see our game varibles in real time. You can do a
     -game.debug(“Hello Godot”)
 
 ### 2. Creating the Player<Character> 
+
+Create a new scene. Create the root as a KinematicBody2D. Change the name of this node to Player and save.
+
+The player object will inherit from a Character script. Essentially it has two scripts, The Player.gd script which inherits all variables and functions from Character.gd. The character script is not attached to any object so we will create it from scracth. Select the script tab from the center mode control (2D,3D,Script,AssetLib). 
+    For 2d games we will bounce from 2d to scripting alot, depending on whether we are focusing on the the graphical objects or the code. 
+At the top of the script editor choose file>newScript. Save the script as Character.gd.
+
+Now in the Player scene in the scene tree click the new script icon. In the dialog box that pops up next to "Inherits:" click on the folder icon. This lets us choose a custon ancestor object to inherit from. Choose Character.gd.
+
+A kinematic body requires that we define a shape. Create a CollisionShape2D as a child of the Player. With the CollisionShape2D selected move you mouse over to the Inspector tab on the right of the default workspace. The inspector is the place to change the setting of your object. Fo now we are going to set the shape of CollsionShape2D. Select a rectangle from the dropdown.
+
+Create a Camera2D as a child of the player, name it Camera so we can access it by $Camera later. In the inspector set it to Current, by clicking the "On" radio button. The on button is the same as setting the property "= true" in code. Since the camera is a child of the Player, it will go where ever the player goes.
+
+In the Game script create the pitYLevel = 225. We are going to set the Camera.limit_bottom to this variable. To do that we need a way to access the Game variables from the Player. For this we will make a script called ref.gd, which simply has links to variables that we want any part of the program to acesss. In the script editor use File>newScript, this script will simply inherit the defaut Node.  Name it ref.gd. You don't need a ready function for this script, just type in:
+    onready var game = "/root/Game"
+Save ref.gd.Now go to Project Settings, and in the autoload tab click the folder icon to load ref.gd and click add. Now you can use ref.game anywhere and get acesss to Game.gd varibles.
+
+In the players ready function access the camera and set its limit_bottom:
+    $Camera.limit_bottom = ref.game.pitYLevel
+So later when the player falls down a hole the camera will stop at this limit as expected.
+    
     -Player/Character script and inheritance
 	-Kinematic Body
 	-Collision Shape
 	-Camera
 	-pitYLevel / Camera.limit_bottom
-    
-    Create a new scene Name it player.
 
 ### 3. Animated Sprite
 	- Create 
