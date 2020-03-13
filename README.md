@@ -63,11 +63,15 @@ A kinematic body requires that we define a shape. Create a CollisionShape2D as a
 Create a Camera2D as a child of the player, name it Camera so we can access it by $Camera later. In the inspector set it to Current, by clicking the "On" radio button. The on button is the same as setting the property "= true" in code. Since the camera is a child of the Player, it will go where ever the player goes.
 
 In the Game script create the pitYLevel = 225. We are going to set the Camera.limit_bottom to this variable. To do that we need a way to access the Game variables from the Player. For this we will make a script called ref.gd, which simply has links to variables that we want any part of the program to acesss. In the script editor use File>newScript, this script will simply inherit the defaut Node.  Name it ref.gd. You don't need a ready function for this script, just type in:
+
     onready var game = "/root/Game"
+
 Save ref.gd.Now go to Project Settings, and in the autoload tab click the folder icon to load ref.gd and click add. Now you can use ref.game anywhere and get acesss to Game.gd varibles.
 
 In the players ready function access the camera and set its limit_bottom:
+    
     $Camera.limit_bottom = ref.game.pitYLevel
+
 So later when the player falls down a hole the camera will stop at this limit as expected.
     
     -Player/Character script and inheritance
