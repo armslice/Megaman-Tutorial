@@ -88,7 +88,7 @@ In the Player scene create an "AnimatedSprite" node. Let's name it sprite to mak
 
 By default the images will be filter upon import. To turn this off, select all the images you wish to fix, then click on the Import tab, located top left along with the scene tab. Scroll down to the Flags section and unclick Filter. Now press the Reimport button. The images will now apear with no filter in all their low bit glory.
 
-create more animations by clicking the icon of the sheet with a plus sign. Name each one and drag in the appropriate images. 
+Create more animations by clicking the icon of the sheet with a plus sign. Name each one and drag in the appropriate images. 
 
     stand, walk, jump, fall, 
     shoot_stand, shoot_walk, 
